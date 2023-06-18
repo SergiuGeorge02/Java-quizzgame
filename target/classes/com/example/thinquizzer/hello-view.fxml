@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.thinquizzer.HelloController">
+   <top>
+      <AnchorPane prefHeight="30.0" prefWidth="600.0" style="-fx-background-color: #b0ccd9;" BorderPane.alignment="CENTER" />
+   </top>
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="30.0" style="-fx-background-color: #b0ccd9;" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="30.0" style="-fx-background-color: #b0ccd9;" BorderPane.alignment="CENTER" />
+   </right>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="play" alignment="CENTER" layoutX="181.0" layoutY="87.0" mnemonicParsing="false" onAction="#handlePlayButtonClicked" prefHeight="48.0" prefWidth="179.0" style="-fx-background-color: #24184a; -fx-background-radius: 15; -fx-font-size: 18; -fx-font-family: Verdana;" text="Play game" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="information" alignment="CENTER" layoutX="181.0" layoutY="161.0" mnemonicParsing="false" onAction="#handleInformationButtonClicked" prefHeight="48.0" prefWidth="179.0" style="-fx-background-color: #24184a; -fx-background-radius: 15; -fx-font-size: 18; -fx-font-family: Verdana;" text="Information" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="exitButton" alignment="CENTER" layoutX="464.0" layoutY="12.0" mnemonicParsing="false" onAction="#exitButtonOnAction" prefHeight="31.0" prefWidth="65.0" style="-fx-background-color: #4b4952; -fx-background-radius: 8; -fx-font-size: 14; -fx-font-family: Verdana;" text="Exit" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-31.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="statistics" alignment="CENTER" layoutX="180.0" layoutY="238.0" mnemonicParsing="false" onAction="#handleStatisticsButtonClicked" prefHeight="48.0" prefWidth="179.0" style="-fx-background-color: #24184a; -fx-background-radius: 15; -fx-font-size: 18; -fx-font-family: Verdana;" text="Statistics" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #b0ccd9;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField alignment="CENTER" layoutX="226.0" layoutY="4.0" style="-fx-background-color: none;" text="© All rights reserved" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

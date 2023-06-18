@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.thinquizzer.RegisterController">
+    <top>
+        <AnchorPane prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #b0ccd9;" BorderPane.alignment="CENTER" />
+    </top>
+    <left>
+        <AnchorPane prefHeight="200.0" prefWidth="30.0" style="-fx-background-color: #b0ccd9;" BorderPane.alignment="CENTER" />
+    </left>
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-31.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@logo.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="155.0" layoutY="127.0" prefHeight="19.0" prefWidth="56.0" text="Username:" />
+            <Label layoutX="155.0" layoutY="160.0" prefHeight="19.0" prefWidth="56.0" text="Email:" />
+            <Label layoutX="155.0" layoutY="197.0" prefHeight="19.0" prefWidth="56.0" text="Password:" />
+            <Label layoutX="128.0" layoutY="85.0" text="Register yourself in order to be able to play the game">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="exitButton" alignment="CENTER" layoutX="459.0" layoutY="14.0" mnemonicParsing="false" onAction="#exitButtonOnAction" prefHeight="31.0" prefWidth="65.0" style="-fx-background-color: #4b4952; -fx-background-radius: 8; -fx-font-size: 14; -fx-font-family: Verdana;" text="Exit" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="password" layoutX="230.0" layoutY="194.0" promptText="Enter you password here" />
+            <TextField fx:id="username" layoutX="230.0" layoutY="124.0" promptText="Enter you username here" />
+            <TextField fx:id="email" layoutX="230.0" layoutY="157.0" promptText="Enter you email here" />
+            <Button fx:id="register" alignment="CENTER" layoutX="218.0" layoutY="252.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="36.0" prefWidth="122.0" style="-fx-background-color: #24184a; -fx-background-radius: 15; -fx-font-size: 18; -fx-font-family: Verdana;" text="Register" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="message" layoutX="127.0" layoutY="298.0" prefHeight="27.0" prefWidth="329.0" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="90.0" layoutY="228.0" prefHeight="17.0" prefWidth="366.0" style="-fx-alignment: center;" text="Be aware: Once you choose a password, you cannot modify it." textFill="#b20707" />
+            </children>
+        </AnchorPane>
+    </center>
+    <right>
+        <AnchorPane prefHeight="200.0" prefWidth="30.0" style="-fx-background-color: #b0ccd9;" BorderPane.alignment="CENTER" />
+    </right>
+    <bottom>
+        <AnchorPane prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #b0ccd9;" BorderPane.alignment="CENTER" />
+    </bottom>
+</BorderPane>
