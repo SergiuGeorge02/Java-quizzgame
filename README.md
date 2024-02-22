@@ -1,1 +1,4 @@
-The Thin Quizzer project is a standard trivia game that features question where the user must complete the correct answer. The answer can be one word answer or also multiple words answer. The project also contains questions with multiple choice answer
+Developed a Java trivia game featuring a user-friendly graphical interface built with JavaFX. Implemented login functionality for user access. It maintains a history of players and their scores, with data stored in a database for seamless retrieval and updating.
+In order to do the user interface I used JavaFX with scene builder. This was the only thing used to do the GUI of the application.
+To store the questions of the game I used a text file where all questions where stored. In another text file the correct answers were stored. I also used a text file in which other proposed answers for each questions were stored.
+The game also had a database because each user had to login or make an account in order to be able to play the game. In order to maintain that database I used JDBC and MYSQL to set up the database.
